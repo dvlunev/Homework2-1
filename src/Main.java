@@ -1,32 +1,34 @@
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
         /* Задание 1-1, 1-2
         System.out.println("Задание 1-1, 1-2");
         Human maksim = new Human();
-        maksim.yearOfBirth = 1988;
+        maksim.yearOfBirth = LocalDate.now().getYear() - 35;
         maksim.name = "Максим";
         maksim.town = "Минск";
         maksim.jobTitle = "бренд-менеджер";
         System.out.println(maksim);
 
         Human ann = new Human();
-        maksim.yearOfBirth = 1993;
-        maksim.name = "Аня";
-        maksim.town = "Москва";
+        ann.yearOfBirth = LocalDate.now().getYear() - 29;
+        ann.name = "Аня";
+        ann.town = "Москва";
         ann.jobTitle = "методист образовательных програм";
         System.out.println(ann);
 
         Human kate = new Human();
-        maksim.yearOfBirth = 1992;
-        maksim.name = "Катя";
-        maksim.town = "Калининград";
+        kate.yearOfBirth = LocalDate.now().getYear() - 28;
+        kate.name = "Катя";
+        kate.town = "Калининград";
         kate.jobTitle = "продакт-менеджер";
         System.out.println(kate);
 
         Human artem = new Human();
-        maksim.yearOfBirth = 1995;
-        maksim.name = "Артем";
-        maksim.town = "Москва";
+        artem.yearOfBirth = LocalDate.now().getYear() - 27;
+        artem.name = "Артем";
+        artem.town = "Москва";
         artem.jobTitle = "директор по развитию бизнеса";
         System.out.println(artem);
         System.out.println();
@@ -80,10 +82,29 @@ public class Main {
 
         // Задание 2-1
         System.out.println("Задание 2-1");
-        Human maksim = new Human(-5, "Максим", "Минск", "бренд-менеджер");
-        Human ann = new Human(1993, "", null, "методист образовательных програм");
-        Human kate = new Human(1992, "Катя", "", null);
-        Human artem = new Human(1995, null, "Москва", "");
+        Human maksim = new Human(
+                -5,
+                "Максим",
+                "Минск",
+                "бренд-менеджер"
+        );
+        Human ann = new Human(
+                1993,
+                "",
+                null,
+                "методист образовательных програм");
+        Human kate = new Human(
+                1992,
+                "Катя",
+                "",
+                null
+        );
+        Human artem = new Human(
+                1995,
+                null,
+                "Москва",
+                ""
+        );
         System.out.println(maksim);
         System.out.println(ann);
         System.out.println(kate);
@@ -92,16 +113,46 @@ public class Main {
 
         // Задание 2-2
         System.out.println("Задание 2-2");
-        Car ladaGranta = new Car("",null, 1.7,"желтый",
-                2015, "Россия");
-        Car audiA8 = new Car("Audi","", 3.0,null,
-                2020, "Германия");
-        Car bmwZ8 = new Car("BMW","Z8", -5.3,"черный",
-                2021, null);
-        Car kiaSportage = new Car("Kia","Sportage 4-го поколения", 2.4,"красный",
-                2018, "");
-        Car hyundaiAvante = new Car("Hyundai","Avante", 1.6,"оранжевый",
-                -101, "Южная Корея");
+        Car ladaGranta = new Car(
+                "",
+                null,
+                1.7,
+                "желтый",
+                2015,
+                "Россия"
+        );
+        Car audiA8 = new Car(
+                "Audi",
+                "",
+                3.0,
+                null,
+                2020,
+                "Германия"
+        );
+        Car bmwZ8 = new Car(
+                "BMW",
+                "Z8",
+                -5.3,
+                "черный",
+                2021,
+                null
+        );
+        Car kiaSportage = new Car(
+                "Kia",
+                "Sportage 4-го поколения",
+                2.4,
+                "красный",
+                2018,
+                ""
+        );
+        Car hyundaiAvante = new Car(
+                "Hyundai",
+                "Avante",
+                1.6,
+                "оранжевый",
+                -101,
+                "Южная Корея"
+        );
         System.out.println(ladaGranta);
         System.out.println(audiA8);
         System.out.println(bmwZ8);
