@@ -124,7 +124,7 @@ public class Main {
         Car audiA8 = new Car(
                 "Audi",
                 "",
-                3.0,
+                null,
                 null,
                 2020,
                 "Германия"
@@ -142,7 +142,7 @@ public class Main {
                 "Sportage 4-го поколения",
                 2.4,
                 "красный",
-                2018,
+                null,
                 ""
         );
         Car hyundaiAvante = new Car(

@@ -6,7 +6,7 @@ public class Car {
     private final int year;
     private final String country;
 
-    public Car(String brand, String model, double engineVolume, String color, int year, String country) {
+    public Car(String brand, String model, Double engineVolume, String color, Integer year, String country) {
         if (brand == null || brand.isEmpty() || brand.isBlank()) {
             brand = "default";
         }
@@ -15,7 +15,7 @@ public class Car {
             model = "default";
         }
         this.model = model;
-        if (engineVolume <= 0) {
+        if (engineVolume == null || engineVolume <= 0) {
             engineVolume = 1.5;
         }
         this.engineVolume = engineVolume;
@@ -23,7 +23,7 @@ public class Car {
             color = "белый";
         }
         this.color = color;
-        if (year <= 0) {
+        if (year == null || year <= 0) {
             year = 2000;
         }
         this.year = year;

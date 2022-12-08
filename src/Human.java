@@ -1,25 +1,25 @@
 import java.util.Objects;
 
 public class Human {
-    public int yearOfBirth;
-    public String name;
-    public String town;
-    public String jobTitle;
+    private int yearOfBirth;
+    private String name;
+    private String town;
+    private String jobTitle;
 
     public Human(int yearOfBirth, String name, String town, String jobTitle) {
         if (yearOfBirth < 0) {
             yearOfBirth = 0;
         }
         this.yearOfBirth = yearOfBirth;
-        if (name == null || name.isEmpty()) {
+        if (name == null || name.isEmpty() || name.isBlank()) {
             name = "Информация не указана";
         }
         this.name = name;
-        if (town == null || town.isEmpty()) {
+        if (town == null || town.isEmpty() || town.isBlank()) {
             town = "Информация не указана";
         }
         this.town = town;
-        if (jobTitle == null || jobTitle.isEmpty()) {
+        if (jobTitle == null || jobTitle.isEmpty() || jobTitle.isBlank()) {
             jobTitle = "Информация не указана";
         }
         this.jobTitle = jobTitle;
